@@ -21,10 +21,19 @@ twitter_username: seeknay
 github_username: seeknay747
 minimal_mistakes_skin: default
 search: true
+words_per_minute: 200
+enable_copy_code_button: true # true, false (default)
+
+# Analytics
+analytics:
+  provider: google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id: G-C9JSC7H6WW
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -56,9 +65,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "seeknay"
-  avatar : "/assets/images/bio-photo.png"
-  bio    : "Identity and Collaboration Architect"
+  name: "seeknay"
+  avatar: "/assets/images/bio-photo.png"
+  bio: "Identity and Collaboration Architect"
   links:
     - label: "TikTok"
       icon: "fab fa-fw fa-tiktok"
@@ -117,6 +126,7 @@ defaults:
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
