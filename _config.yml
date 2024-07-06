@@ -26,9 +26,10 @@ enable_copy_code_button: true # true, false (default)
 
 # Analytics
 analytics:
-  provider: google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id: G-C9JSC7H6WW
+    tracking_id: "G-C9JSC7H6WW"
+    anonymize_ip: false # default
 
 # Build settings
 markdown: kramdown
