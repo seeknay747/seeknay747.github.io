@@ -32,4 +32,6 @@ I hadn't heard this correlation before, and I thought it was brilliant. You'll h
 
 My absolute favorite quote, "It doesn't often pay off in real time, so we think it's a waste of time". I swear when I heard this, I was taken aback the same way Gerald was. 😂 
 
-[![Kelsey Hightower: You have to put in the work.. Forever](https://i.ytimg.com/vi/O49Ms-qLjok/maxresdefault.jpg)]([https://www.youtube.com/watch?v=O49Ms-qLjok&t=2s](https://www.youtube.com/watch?v=O49Ms-qLjok))
+YouTube Video:
+
+[!["Kelsey Hightower: You have to put in the work.. Forever"](https://i.ytimg.com/vi/O49Ms-qLjok/maxresdefault.jpg)](https://www.youtube.com/watch?v=O49Ms-qLjok)
