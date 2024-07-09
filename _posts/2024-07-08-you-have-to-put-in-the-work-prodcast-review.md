@@ -1,5 +1,3 @@
-2024-07-08-you-have-to-put-in-the-work-prodcast-review.md
-
 ---
 title: "Podcast Review: Kelsey Hightower: You have to put in the work.. Forever"
 date: 2024-07-09T02:30:00-04:00
