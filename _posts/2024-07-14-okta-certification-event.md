@@ -21,4 +21,4 @@ If you're looking for additional material to study with, Pluralsight has a study
 
 Okta's Certification Program: https://regionalevents.okta.com/oktacertification24
 
-![Okta Promo Banner](assets/images/okta-banner.png)
+{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/okta-banner.png" alt="Okta Promo Banner">{% endraw %}
