@@ -17,8 +17,8 @@ I had posted about this once before on TikTok but I misunderstood and thought I 
 
 It's been a while since I took any sort of certification and Okta will always be a valuable platform to learn, especially in the Identity space!  I'm currently studying for the Okta Certified Professional and have been using the Premiere Practice Exam's which are free to practice on.  The best part of the Premiere exams are that they give you access to the hands-on lab part and allows you to practice within an actual Okta Tenant.  If you're new-ish to Okta, these are a great study resource.
 
-If you're looking for additional material to study with, Pluralsight has a study path produced by the infamous Tim Werner here: https://www.pluralsight.com/paths/okta-certified-professional
+If you're looking for additional material to study with, Pluralsight has a study path produced by the infamous Tim Werner here: [https://www.pluralsight.com/paths/okta-certified-professional]
 
-Okta's Certification Program: https://regionalevents.okta.com/oktacertification24
+Okta's Certification Program: [https://regionalevents.okta.com/oktacertification24]
 
-{% raw %}<img src="{{ site.url }}{{ site.baseurl }}/assets/images/okta-banner.png" alt="Okta Promo Banner">{% endraw %}
+{% raw %}![alt]({{ site.url }}{{ site.baseurl }}/assets/images/okta-banner.png){% endraw %}
