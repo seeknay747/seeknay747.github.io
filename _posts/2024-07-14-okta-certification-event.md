@@ -21,4 +21,4 @@ If you're looking for additional material to study with, Pluralsight has a study
 
 Okta's Certification Program: [https://regionalevents.okta.com/oktacertification24](https://regionalevents.okta.com/oktacertification24)
 
-[!["Okta's Certification Program"](https://github.com/seeknay747/seeknay747.github.io/blob/master/assets/images/okta-banner.png)](https://regionalevents.okta.com/oktacertification24)
+[!["Okta's Certification Program"](https://raw.githubusercontent.com/seeknay747/seeknay747.github.io/master/assets/images/okta-banner.png)](https://regionalevents.okta.com/oktacertification24)
