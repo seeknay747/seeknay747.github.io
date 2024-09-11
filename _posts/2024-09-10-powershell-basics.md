@@ -8,24 +8,32 @@ tags:
   - scripting
   - videos
 ---
+# Introduction
 
 Why, hello there!
 
-I've seem to have stumbled upon an area or interest (at least for now) in the TikTok community.  That area happens to be one of my favorite tools: PowerShell!
+I've seem to have stumbled upon an area of interest (at least for now) in the TikTok community. That area happens to be one of my favorite tools: **PowerShell**!
 
-Here are some video I've recorded so far:
+# Recorded Videos
 
-Part 1: The goal for this video was honestly to show off the "CLIP" command and everything preceding it was completely ad-libbed.  It turns out a lot of people were interested in seeing more!
+Here are some videos I've recorded so far:
 
-https://www.youtube.com/watch?v=EtAfqEAlJkk
+## Part 1: Introduction to the "CLIP" Command
 
-Part 2: I specifically cover Aliasing in PowerShell to address some comments that spoke to the verbosity of the tool.
+The goal for this video was honestly to show off the `CLIP` command, and everything preceding it was completely ad-libbed. It turns out a lot of people were interested in seeing more!
 
-https://www.youtube.com/watch?v=wWbOpLoxMrM
+[Watch Part 1 on YouTube](https://www.youtube.com/watch?v=EtAfqEAlJkk)
 
+## Part 2: PowerShell Aliasing
 
-If you are reading this and want to see anything specifically covered within PowerShell; please feel free to leave a comment on the Youtube video.  I'll do my best to cover everything that I am familiar with and can.
+In this video, I specifically cover Aliasing in PowerShell to address some comments about the verbosity of the tool.
+
+[Watch Part 2 on YouTube](https://www.youtube.com/watch?v=wWbOpLoxMrM)
+
+# Get Involved
+
+If you are reading this and want to see anything specifically covered within PowerShell, please feel free to leave a comment on the YouTube video. I'll do my best to cover everything that I am familiar with and can.
 
 Thanks!
 
-( P.S. I'll eventually spend some time on proper video thumbnails. :-) )
+_P.S. I'll eventually spend some time on proper video thumbnails._ 🙂
