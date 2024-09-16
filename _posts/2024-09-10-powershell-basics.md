@@ -30,6 +30,12 @@ In this video, I specifically cover Aliasing in PowerShell to address some comme
 
 [Watch Part 2 on YouTube](https://www.youtube.com/watch?v=wWbOpLoxMrM)
 
+## Part 3: PowerShell (What is `$_` ?)
+
+In this video, we dive into the basics of PowerShell, specifically focusing on the $_ symbol. These are essential when working with objects in a pipeline, especially when processing arrays or handling errors in a try-catch block.
+
+[Watch Part 3 on YouTube](https://www.youtube.com/watch?v=tFNpOhMngmk)
+
 # Get Involved
 
 If you are reading this and want to see anything specifically covered within PowerShell, please feel free to leave a comment on the YouTube video. I'll do my best to cover everything that I am familiar with and can.
