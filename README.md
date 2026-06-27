@@ -1,75 +1,67 @@
 # seeknay.com
 
-This repository contains the source code for [seeknay.com](https://seeknay.com), a personal tech blog built with Jekyll and hosted on GitHub Pages.
+Source for [**seeknay.com**](https://seeknay.com) — a personal tech blog on Identity & Access
+Management, security, PowerShell, and career topics. Built with [Jekyll](https://jekyllrb.com/)
+and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) remote theme, hosted
+on GitHub Pages.
 
-## Project Overview
+> **Working with Claude Code in this repo?** Start with [`CLAUDE.md`](./CLAUDE.md) and
+> [`ANTIPATTERNS.md`](./ANTIPATTERNS.md).
 
-*   **Type:** Personal Blog / Portfolio
-*   **Engine:** [Jekyll](https://jekyllrb.com/)
-*   **Theme:** [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) (Remote Theme)
-*   **Hosting:** GitHub Pages
+## Tech stack
 
-## Architecture & Tech Stack
+- **Jekyll 3.9.5** via the `github-pages` gem (pins versions to match GitHub Pages).
+- **Minimal Mistakes** remote theme (`remote_theme: mmistakes/minimal-mistakes`), skin `air`.
+- **Markdown (Kramdown)** for content, **Liquid** for templating, **SCSS** for style overrides.
+- Client-side **Lunr** search. Plugins: `jekyll-paginate`, `jekyll-sitemap`, `jekyll-gist`,
+  `jekyll-feed`, `jemoji`, `jekyll-include-cache`.
 
-The site leverages the power of static site generation via Jekyll, utilizing a remote theme for styling and layout to keep the codebase clean and maintainable.
+## Local development
 
-### Key Technologies
-*   **Ruby:** The underlying language for Jekyll.
-*   **Liquid:** Templating language used for dynamic content insertion.
-*   **Markdown (Kramdown):** Used for authoring content (posts and pages).
-*   **YAML:** Used for configuration (`_config.yml`) and Front Matter data.
-*   **SCSS:** The theme uses SCSS, though this repo currently relies on the standard theme assets.
-
-### Directory Structure
-*   `_config.yml`: **Critical.** The central configuration file. Controls site settings, author info, navigation, and plugins. **Note:** Changes here require a server restart.
-*   `_posts/`: Contains blog posts. Format: `YYYY-MM-DD-title.md`.
-*   `_pages/`: Contains static pages (e.g., `about.md`, `404.md`, Archives).
-*   `_includes/`: HTML partials. Contains a custom overrides like `analytics-providers/google-gtag.html`.
-*   `assets/`: Currently stores images in `images/`.
-*   `Gemfile`: Define Ruby gem dependencies.
-
-## Development Instructions
-
-### formatting
-*   **Line Endings:** Use standard LF.
-*   **Encoding:** UTF-8.
-
-### AI Coding Guidelines
-When acting as an AI assistant for this repository, please adhere to the following:
-
-1.  **Content Creation:**
-    *   New posts must go into `_posts/` with the filename format `YYYY-MM-DD-title.md`.
-    *   Ensure valid YAML Front Matter (title, date, categories, tags).
-    *   Use `classes: wide` in Front Matter or defaults if a wide layout is preferred.
-
-2.  **Configuration Management:**
-    *   All global settings (Title, Description, Author links, Sidebars) are managed in `_config.yml`.
-    *   When modifying `_config.yml`, remind the user that a local server restart is required.
-
-3.  **Theme Customization:**
-    *   **Do not** try to edit theme files directly as they are loaded remotely.
-    *   **To Override:** Create a file with the same path and name in the local directory (e.g., `_includes/head.html` to override the theme's head).
-    *   **Custom CSS:** If requested, create `assets/css/main.scss` and import the theme's CSS specifically to add overlays, but prefer using `_config.yml` skin settings first.
-
-4.  **Plugins:**
-    *   Supported plugins are listed in `Gemfile` under `github-pages` or `jekyll_plugins`.
-    *   Current plugins: `jekyll-paginate`, `jekyll-sitemap`, `jekyll-gist`, `jekyll-feed`, `jemoji`, `jekyll-include-cache`, `jekyll-algolia`.
-
-### Local Execution
-To run the site locally:
 ```bash
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve   # http://localhost:4000
 ```
-Access via `http://localhost:4000`.
+
+`_config.yml` is **not** hot-reloaded — restart the server after editing it.
+
+## Repository layout
+
+| Path | Purpose |
+|---|---|
+| `_config.yml` | Site config: author, social, analytics, plugins, defaults. |
+| `_posts/` | Blog posts — `YYYY-MM-DD-title.md`. |
+| `_pages/` | Static pages (`about`, `404`, archives). |
+| `_includes/` | Local partials that override matching theme files. |
+| `assets/css/main.scss` | Theme skin import + style overrides. |
+| `assets/images/` | Post images, avatar, favicon. |
+| `_data/navigation.yml` | Main navigation. |
+| `script/check_front_matter.rb` | CI guard: required post front matter. |
+| `.github/workflows/ci.yml` | Build + front-matter + HTML-Proofer checks. |
+| `.claude/skills/` | Authoring/publishing automations (see below). |
+
+## Publishing a post
+
+1. **Draft** — use the `new-post` skill (scaffolds the filename + front matter), then write the body.
+2. **Publish** — use the `publish-post` skill: it validates front matter, builds locally, opens a
+   PR (never pushes to `master` directly), and CI runs build + link/image checks.
+3. **Merge** — once CI is green and the PR is merged, GitHub Pages publishes from `master` automatically.
+4. **Promote** — use the `share-post` skill to draft per-platform social copy.
 
 ## Deployment
-The site is deployed automatically via GitHub Pages when changes are pushed to the default branch.
 
-## Configuration Resources
-For detailed configuration options, refer to the [Minimal Mistakes Configuration Documentation](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+GitHub Pages builds and deploys automatically from the **`master`** branch. There is no
+separate deploy step. Only plugins on the
+[GitHub Pages whitelist](https://pages.github.com/versions/) run on the live build.
 
-### Quick Reference
-*   **Skins:** `default`, `air`, `aqua`, `contrast`, `dark`, `dirt`, `neon`, `mint`, `plum`, `sunrise`
-*   **Locale:** Defined in `_config.yml` (e.g., `en-US`). Matches `_data/ui-text.yml`.
-*   **Search:** Enabled via `search: true`.
+## Security & privacy
+
+This is a **public** repository. Never commit secrets, credentials, or private PII; the
+`email:` field in `_config.yml` is intentionally blank. Dependencies are monitored by
+Dependabot, and CI runs with least-privilege permissions. To report a vulnerability, see
+[`.github/SECURITY.md`](./.github/SECURITY.md).
+
+## Configuration reference
+
+[Minimal Mistakes configuration docs](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+Available skins: `default`, `air`, `aqua`, `contrast`, `dark`, `dirt`, `neon`, `mint`, `plum`, `sunrise`.
