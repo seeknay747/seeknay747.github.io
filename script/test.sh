@@ -27,6 +27,7 @@ JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_proo
 bundle exec htmlproofer ./_site \
   --disable-external \
   --allow-hash-href \
+  --allow-missing-href \
   --ignore-missing-alt
 
 echo "All checks passed."

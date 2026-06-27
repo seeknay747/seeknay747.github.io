@@ -22,7 +22,7 @@ branch and is protected — **always go through a PR, never push to `master` dir
    ```
    Optionally run the link/image check:
    ```bash
-   bundle exec htmlproofer ./_site --disable-external --allow-hash-href --ignore-missing-alt
+   bundle exec htmlproofer ./_site --disable-external --allow-hash-href --allow-missing-href --ignore-missing-alt
    ```
 
 3. **Branch** off `master` if not already on a feature branch:

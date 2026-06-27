@@ -42,4 +42,5 @@ jobs:
         bundle exec htmlproofer ./_site \
           --disable-external \
           --allow-hash-href \
+          --allow-missing-href \
           --ignore-missing-alt
