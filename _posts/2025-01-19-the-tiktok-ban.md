@@ -31,20 +31,20 @@ Here are some fun metrics I screenshot before the service went down:
 > Tip: Click the image to expand!
 
 Profile Stats:
-[![tt-follows.png](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-profile-stats.png?raw=true)](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-profile-stats.png?raw=true)
+[![TikTok profile stats screenshot](/assets/images/tt-profile-stats.png)](/assets/images/tt-profile-stats.png)
 
 Follower Stats:
-[![tt-follows.png](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-followers.png?raw=true)](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-followers.png?raw=true)
+[![TikTok follower stats screenshot](/assets/images/tt-followers.png)](/assets/images/tt-followers.png)
 
 Viewer Stats:
-[![tt-follows.png](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-viewers.png?raw=true)](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-viewers.png?raw=true)
+[![TikTok viewer stats screenshot](/assets/images/tt-viewers.png)](/assets/images/tt-viewers.png)
 
 My Most Popular Videos:
-[![tt-popularvideos.png](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-popularvideos.png?raw=true)](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/tt-popularvideos.png?raw=true)
+[![TikTok most popular videos screenshot](/assets/images/tt-popularvideos.png)](/assets/images/tt-popularvideos.png)
 
 
 Stats on my most popular video:
-[![my-most-popular-video.png](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/my-most-popular-video.png?raw=true)](https://github.com/pbuffolino/seeknay747.github.io/blob/master/assets/images/my-most-popular-video.png?raw=true)
+[![Stats for my most popular TikTok video](/assets/images/my-most-popular-video.png)](/assets/images/my-most-popular-video.png)
 
 
 I hope to continue the connections I've made along the way on any platform that will have us. It's critically important to have a group in your industry or field where you can bounce questions off of each other, discuss challenges, and sometimes just vent. Having a support network is invaluable in both personal and professional growth.

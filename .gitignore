@@ -1,7 +1,24 @@
-_site
-.sass-cache
+# Jekyll build output & caches
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-.vscode
+
+# Ruby / Bundler
+vendor/
+.bundle/
 Gemfile.lock
-assets/.DS_Store
+
+# Local environment & secrets (never commit)
+.env
+.env.*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS cruft
 .DS_Store
+Thumbs.db

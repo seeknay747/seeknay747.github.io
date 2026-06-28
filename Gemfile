@@ -13,7 +13,12 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem "jekyll-algolia"
 end
 
 gem "webrick", "~> 1.9"
+
+# CI-only: link/image/HTML validation against the built _site.
+# Not used by the GitHub Pages build (Pages ignores non-whitelisted gems).
+group :test do
+  gem "html-proofer", "~> 5.0"
+end

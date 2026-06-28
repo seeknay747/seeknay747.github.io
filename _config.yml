@@ -22,8 +22,13 @@ github_username: pbuffolino
 repository: pbuffolino/seeknay747.github.io
 minimal_mistakes_skin: air
 search: true
+search_provider: lunr # client-side search (GitHub Pages does not run jekyll-algolia)
 words_per_minute: 200
 enable_copy_code_button: true # true, false (default)
+breadcrumbs: true # show breadcrumb navigation on posts/pages
+# Default social-share image for link previews (Open Graph / Twitter cards).
+# Override per-post with `header.og_image` in front matter.
+og_image: "/assets/images/seeknay-avatar.jpg"
 
 # Analytics
 analytics:
