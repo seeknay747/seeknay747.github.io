@@ -34,7 +34,11 @@ jobs:
 
     - name: Validate HTML, links & images (HTML-Proofer)
       run: |
-        bundle exec htmlproofer ./_site \
-          --disable-external \
-          --allow-hash-href \
-          --internal-domains "seeknay.com"
+        bundle exec ruby -r html_proofer -e '
+          options = {
+            disable_external: true,
+            allow_hash_href: true,
+            swap_urls: { %r{^https://seeknay\.com} => "" }
+          }
+          HTMLProofer.check_directory("./_site", options).run
+        '
