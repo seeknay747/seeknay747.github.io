@@ -1,7 +1,0 @@
-# Overlay config used ONLY for the CI link-check build (HTML-Proofer).
-# Forces root-relative URLs so internal links/images render as /path instead of
-# https://seeknay.com/path — that lets HTML-Proofer validate them against _site
-# while still treating real external links as external (and skipping them).
-# This file does NOT affect the live GitHub Pages deploy.
-url: ""
-baseurl: ""
