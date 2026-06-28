@@ -31,6 +31,7 @@ jobs:
       run: bundle exec jekyll build
       env:
         JEKYLL_ENV: production
+        JEKYLL_SKIP_GITHUB_METADATA: true
 
     - name: Validate HTML, links & images (HTML-Proofer)
       run: |
