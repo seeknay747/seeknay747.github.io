@@ -1,12 +1,29 @@
-# seeknay.com
+<div align="center">
 
-Source for [**seeknay.com**](https://seeknay.com) — a personal tech blog on Identity & Access
-Management, security, PowerShell, and career topics. Built with [Jekyll](https://jekyllrb.com/)
-and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) remote theme, hosted
-on GitHub Pages.
+# 📝 seeknay.com
+
+**Source for [seeknay.com](https://seeknay.com) — a personal tech blog on Identity & Access Management, security, PowerShell, and career topics.**
+
+Built with [Jekyll](https://jekyllrb.com/) and the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) remote theme, hosted on GitHub Pages.
+
+[![Live Site](https://img.shields.io/badge/🌐_Visit_Site-seeknay.com-4f46e5?style=for-the-badge)](https://seeknay.com/)
+[![CI](https://img.shields.io/github/actions/workflow/status/pbuffolino/seeknay747.github.io/ci.yml?style=for-the-badge&label=CI)](https://github.com/pbuffolino/seeknay747.github.io/actions/workflows/ci.yml)
+
+![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?style=for-the-badge&logo=jekyll&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222?style=for-the-badge&logo=githubpages&logoColor=white)
+
+[**Live Demo**](https://seeknay.com/) · [**Report Bug**](https://github.com/pbuffolino/seeknay747.github.io/issues/new)
+
+</div>
+
+---
 
 > **Working with Claude Code in this repo?** Start with [`CLAUDE.md`](./CLAUDE.md) and
 > [`ANTIPATTERNS.md`](./ANTIPATTERNS.md).
+
+---
 
 ## Tech stack
 
@@ -16,6 +33,8 @@ on GitHub Pages.
 - Client-side **Lunr** search. Plugins: `jekyll-paginate`, `jekyll-sitemap`, `jekyll-gist`,
   `jekyll-feed`, `jemoji`, `jekyll-include-cache`.
 
+---
+
 ## Local development
 
 ```bash
@@ -24,6 +43,8 @@ bundle exec jekyll serve   # http://localhost:4000
 ```
 
 `_config.yml` is **not** hot-reloaded — restart the server after editing it.
+
+---
 
 ## Repository layout
 
@@ -40,6 +61,8 @@ bundle exec jekyll serve   # http://localhost:4000
 | `.github/workflows/ci.yml` | Build + front-matter + HTML-Proofer checks. |
 | `.claude/skills/` | Authoring/publishing automations (see below). |
 
+---
+
 ## Publishing a post
 
 1. **Draft** — use the `new-post` skill (scaffolds the filename + front matter), then write the body.
@@ -48,11 +71,15 @@ bundle exec jekyll serve   # http://localhost:4000
 3. **Merge** — once CI is green and the PR is merged, GitHub Pages publishes from `master` automatically.
 4. **Promote** — use the `share-post` skill to draft per-platform social copy.
 
+---
+
 ## Deployment
 
 GitHub Pages builds and deploys automatically from the **`master`** branch. There is no
 separate deploy step. Only plugins on the
 [GitHub Pages whitelist](https://pages.github.com/versions/) run on the live build.
+
+---
 
 ## Security & privacy
 
@@ -60,6 +87,8 @@ This is a **public** repository. Never commit secrets, credentials, or private P
 `email:` field in `_config.yml` is intentionally blank. Dependencies are monitored by
 Dependabot, and CI runs with least-privilege permissions. To report a vulnerability, see
 [`.github/SECURITY.md`](./.github/SECURITY.md).
+
+---
 
 ## Configuration reference
 
