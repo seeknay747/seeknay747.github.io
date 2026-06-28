@@ -32,13 +32,9 @@ jobs:
       env:
         JEKYLL_ENV: production
 
-    - name: Build for link check (root-relative URLs)
-      run: bundle exec jekyll build --config _config.yml,_config_proofer.yml
-      env:
-        JEKYLL_ENV: production
-
     - name: Validate HTML, links & images (HTML-Proofer)
       run: |
         bundle exec htmlproofer ./_site \
           --disable-external \
-          --allow-hash-href
+          --allow-hash-href \
+          --swap-urls "(^https://seeknay\.com):"
